@@ -1,0 +1,30 @@
+<div class="movie" id="movie-card" *ngFor="let detail of details">
+  <div class="movie__data" id="movie-data">
+    <div class="movie__poster">
+      <span class="movie__poster--fill">
+        <img src="{{detail.image}}">
+      </span>
+      <span class="movie__poster--featured">
+        <img src="{{detail.image}}">
+      </span>
+    </div>
+    <div class="movie__details">
+      <h2 class="movie__title">{{detail.title}}</h2>
+      <ul class="movie__tags list--inline">
+        <li class="movie__year">{{detail.relased}}</li>
+        <li class="movie__rated">{{detail.status}}</li>
+
+        <li class="movie__year">{{detail.type}}</li>
+      </ul>
+      <p class="movie__plot">{{detail.summary}}</p>
+      <div class="movie__credits">
+        <p><strong>Episodes:</strong> {{detail.totalepisode}} </p>
+        <p><strong>Other Name:</strong> {{detail.Othername}} </p>
+        <p><strong>Genre:</strong></p>
+        <ul class="movie__actors list--inline">
+          <li>{{detail.genres}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

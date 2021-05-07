@@ -1,0 +1,17 @@
+<router-outlet></router-outlet>
+
+<div class="movie" id="movie-card">
+
+  <p><Strong>Episodes {{totalEps}} </Strong></p>
+
+  <ul class="movie__actors list--inline">
+    <li *ngFor="let item of totalEps |episodes"> <button class="button white" [routerLink]="['./player',item]" routerLinkActive="router-link-active" >
+        <svg preserveAspectRatio="none" viewBox="0 0 200 68">
+          <path d="M0 12C0 12 60 12 100 12C140 12 200 12 200 12V56C200 56 140 56 100 56C60 56 0 56 0 56V12Z" />
+        </svg>
+        <div>{{item}}</div>
+      </button>
+      <br>
+    </li>
+  </ul>
+</div>

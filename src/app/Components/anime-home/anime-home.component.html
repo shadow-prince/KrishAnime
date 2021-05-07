@@ -1,0 +1,27 @@
+<!-- partial:index.partial.html -->
+<h3 class="lead">Recently Added</h3>
+<div class="row">
+  <div *ngFor="let item of recently" style="padding-left: 10px; padding-top: 10px;">
+    <div class="mobile-card">
+      <img src="{{item.image}}" alt="">
+      <div class="card-content">
+        <div class="card-info">
+          <h3>{{item.title}}</h3>
+        </div>
+        <div class="card-action">
+          <span>Episodes: {{item.episodenumber}}</span>
+          <a class="stretched-link" [routerLink]="['/details',item.id]" routerLinkActive="router-link-active"> <i
+                class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+</div>
+<div class="contaier">
+  <button class="btn btn-dark rounded-pill-lg">
+
+    Next
+
+  </button>
+</div>

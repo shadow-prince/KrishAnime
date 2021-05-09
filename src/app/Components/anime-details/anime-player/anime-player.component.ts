@@ -19,6 +19,7 @@ export class AnimePlayerComponent implements OnInit {
 
     this._apiService.fetchVideoLinks(this._apiService.getId(), this.epno).subscribe(data=>{
       this.links=data['links']
+      this.play = this.links[0].src
     })
   }
 

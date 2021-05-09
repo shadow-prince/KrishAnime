@@ -1,11 +1,5 @@
 <p>Now Playing {{epno}} </p>
-<div class="movie" id="movie-card">
-  <div class="movie__data" id="movie-data">
-    <select [(ngModel)]="play">
-      <option *ngFor="let item of links ; let i=index" [value]="item.src" >{{item.size}}</option>
-    </select>
-  </div>
-</div>
+
 <!--
 <vg-player>
   <vg-controls>

@@ -21,7 +21,7 @@ export class ApiService {
     return this.id
   }
 
-  private base_url = 'https://krishanime.vercel.app/api/'
+  private base_url = 'https://krish-anime-api-98k6.vercel.app/api/'
 
   recenltyAdded(): Observable<any> {
     return this.httpClient.get<any>(this.base_url + 'recentlyadded/' + 1)
